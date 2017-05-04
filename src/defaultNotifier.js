@@ -16,7 +16,7 @@ export const defaultNotifier = (groupByComponent, collapseComponentGroups, displ
 }
 
 const notifyDiff = ({name, prev, next, type}) => {
-  console.group(name)
+  console.groupCollapsed(name)
 
   if (type === `avoidable`) {
     console.warn(`%c%s`, `font-weight: bold`, AVOIDABLE_WARNING)
